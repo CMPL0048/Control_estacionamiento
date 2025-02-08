@@ -14,5 +14,8 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('plantilla');
 });
+Route::get('/plantilla', function(){
+    return view('plantilla');
+})->name('plantilla');
