@@ -1,33 +1,57 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8" />
-        <meta name="description" content="Olivos Restaurant" />
-        <meta name="keywords" content="Restaurant, restaurant, Restaurante, restaurante, Olivo, olivo, Olivos, Olivos" />
-        <met400px !important;="viewport" content="width=device-width, initial-scale=1.0" />
-        /*<link rel="icon" type="image/x-icon" href="/Agregar ubcacion/icono">
-        <title>@yield('Titulo', 'Universidad Tecnológica de Nayarit')</title>
-        @yield('estilos')
-        <link rel="stylesheet" type="text/css" href="Estilos/Plantilla.css">
-    </head>
-    <header>
-        <nav>
-            <h1>Universidad Tecnológica de Nayarit</h1>
-            <h3>Gestor de estacionamiento</h3>
-            <ul>
-                <li><a href="/">Inicio</a></li>
-                <li><a href="/registro">Registro</a></li>
-                <li><a href="/incio_sesion">Inicio de sesión</a></li>
-                <li><a href="/provedores">Sugerencias</a></li>
-            </ul>
-        </nav>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@yield('title') - Estacionamiento</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Estilos personalizados -->
+    <link rel="stylesheet" href="{{ asset('css/styles.css') }}">
+</head>
+<body>
+    <!-- Header -->
+    <header class="bg-primary text-white py-3">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-center">
+                <h1 class="h4">Estacionamiento</h1>
+                <nav>
+                    <ul class="list-inline mb-0">
+                        <li class="list-inline-item"><a href="{{ route('inicio') }}" class="text-white text-decoration-none">Inicio</a></li>
+                        <li class="list-inline-item"><a href="{{ route('acceso') }}" class="text-white text-decoration-none">Acceso</a></li>
+                        <li class="list-inline-item"><a href="{{ route('registro') }}" class="text-white text-decoration-none">Registro</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
     </header>
-    <body>
-        @yield('contenido')
-    </body>
-    <footer>
-        <p>Dirección: Av.México #234, Colonia Centro</p>
-        <p>Teléfono: (322) 345-6754</p>
-        <p>Correo electrónico:  <a href="mailto:contact@olivos.com">LosOlivos@gmail.com</a></p>
+
+    <!-- Contenido principal -->
+    <main>
+        @yield('content')
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5>Contacto</h5>
+                    <p>Dirección: [Dirección de la universidad]</p>
+                    <p>Teléfono: [Teléfono]</p>
+                    <p>Email: [Email]</p>
+                </div>
+                <div class="col-md-6">
+                    <h5>Enlaces rápidos</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="/aviso-privacidad" class="text-white text-decoration-none">Aviso de privacidad</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </footer>
+
+    <!-- Bootstrap JS y dependencias -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
 </html>
