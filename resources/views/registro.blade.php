@@ -1,8 +1,8 @@
 @extends('plantilla')
 
 @section('title', 'Registro')
-
 @section('content')
+<link rel="stylesheet" type="text/css" href="{{asset('estilos/plantilla.css')}}">
     <div class="container py-5">
         <div class="row justify-content-center">
             <div class="col-md-6">
@@ -23,7 +23,7 @@
                             <option value="alumno">Alumno</option>
                         </select>
                     </div>
-                    <button type="submit" class="btn btn-primary w-100">REGISTRARME</button>
+                    <button type="submit" class="btn-primary w-100 btn">REGISTRARME</button>
                 </form>
             </div>
         </div>

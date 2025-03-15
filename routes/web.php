@@ -19,3 +19,10 @@ Route::get('/', function () {
 Route::get('/plantilla', function(){
     return view('plantilla');
 })->name('plantilla');
+
+Route::get('/acceso', function(){
+    return view('acceso');
+})->name('acceso');
+Route::get('/registro', function(){
+    return view('registro');
+})->name('registro');
