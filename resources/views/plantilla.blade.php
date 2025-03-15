@@ -17,9 +17,9 @@
                 <h1 class="h4">Estacionamiento</h1>
                 <nav>
                     <ul class="list-inline mb-0">
-                        <li class="list-inline-item"><a href="{{ route('inicio') }}" class="text-white text-decoration-none">Inicio</a></li>
-                        <li class="list-inline-item"><a href="{{ route('acceso') }}" class="text-white text-decoration-none">Acceso</a></li>
-                        <li class="list-inline-item"><a href="{{ route('registro') }}" class="text-white text-decoration-none">Registro</a></li>
+                        <li class="list-inline-item">Inicio</a></li>
+                        <li class="list-inline-item">Acceso</a></li>
+                        <li class="list-inline-item">Registro</a></li>
                     </ul>
                 </nav>
             </div>

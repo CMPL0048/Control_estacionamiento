@@ -14,7 +14,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('incio');
+    return view('index');
 });
 Route::get('/plantilla', function(){
     return view('plantilla');
