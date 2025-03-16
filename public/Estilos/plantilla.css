@@ -1,0 +1,177 @@
+/*===ESTILOS GENERALES===*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html, body {
+    height: 100%; /* Asegura que el body ocupe toda la altura de la ventana */
+}
+
+body {
+    display: flex;
+    flex-direction: column; /* Organiza el contenido en columnas (header, main, footer) */
+}
+
+/*===HEADER===*/
+header {
+    background: #232526;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #414345, #232526);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #ffffff;
+    padding: 10px 0;
+}
+
+.contenedor {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.logo {
+    width: 60px;
+    height: 50px;
+}
+
+.si {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.menu ul {
+    display: flex;
+    list-style: none;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.menu a {
+    display: block;
+    border-radius: 8px;
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+}
+
+.menu a:hover {
+    background-color: #28d47c;
+}
+
+/*===MAIN===*/
+main {
+    flex: 1; /* Ocupa el espacio restante */
+    padding: 20px;
+}
+
+/*===FOOTER===*/
+footer {
+    background: #232526;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #414345, #232526);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 18px;
+    width: 100%;
+}
+
+.footer-columns {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-contacto, .footer-redes {
+    flex: 1; /* Ambas columnas ocupan el mismo espacio */
+    padding: 10px;
+}
+
+.footer-redes ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-redes ul li {
+    margin: 10px 0;
+}
+
+.footer-redes ul li a {
+    color: #28d47c;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.footer-redes ul li a:hover {
+    text-decoration: underline;
+}
+
+.footer-copyright {
+    background-color: #28d47c; /* Color de fondo para la sección de derechos de autor */
+    color: white; /* Color del texto */
+    padding: 10px 0;
+    width: 100%;
+    margin-top: 20px;
+    box-shadow: 0px 0px 15px rgba(0,0,0,0.4);
+}
+
+.footer-copyright p {
+    margin: 0;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.recuadro {
+    width: 40%;
+    height: 100%;
+    padding: 20px;
+    background-color: #f2f2f2;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.3);
+}
+
+h2{
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+    color: #232526;
+}
+h3{
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+}
+
+.footer_h1{
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+}
+
+.centrado{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    text-align: center;
+}
+
+.btn-primary {
+    background-color: #28d47c; /* Cambia este valor al color que desees */
+    border-color: #28d47c; /* Cambia el color del borde si es necesario */
+}
+
+.btn-primary:hover {
+    background-color: #21ad65; /* Cambia el color al pasar el mouse */
+    border-color: #21ad65;
+}
