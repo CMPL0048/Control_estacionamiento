@@ -16,10 +16,8 @@
                 <div class="div_nav">
                     <nav class="menu">
                         <ul>
-                            <li><a href="/index">Inicio</a></li>
+                            <li><a href="/">Inicio</a></li>
                             <li><a href="/acceso">Acceso</a></li>
-                            <li><a href="/registro">Registro</a></li>
-                            <li><a href="/ayuda">Ayuda</a></li></li>
                         </ul>
                     </nav>
                 </div>

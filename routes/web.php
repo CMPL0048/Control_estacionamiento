@@ -13,8 +13,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('index');
+Route::get('/', function(){
+    return view ('index');
 });
 Route::get('/plantilla', function(){
     return view('plantilla');
@@ -26,3 +26,6 @@ Route::get('/acceso', function(){
 Route::get('/registro', function(){
     return view('registro');
 })->name('registro');
+Route::get('/reporte', function(){
+    return view ('reporte');
+})->name('reporte');
