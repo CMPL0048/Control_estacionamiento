@@ -2,49 +2,52 @@
 
 @section('title', 'Registro')
 @section('content')
-<link rel="stylesheet" type="text/css" href="{{asset('estilos/plantilla.css')}}">
-    <div class="centrado">
-        <div class="recuadro">
-            <div class="row justify-content-center">
-                <div class="col-md-8">
-                    <h2>REGISTRO</h2>
-                    <form>
-                        <div class="mb-3">
-                            <label for="name" class="form-label">NOMBRE:</label>
-                            <input type="name" class="form-control" id="name" name="name" required>
-                        </div>
-                        <div class="mb-3">
-                            <label for="email" class="form-label">CORREO ELECTRÓNICO:</label>
-                            <input type="email" class="form-control" id="email" name="email" required>
-                        </div>
-                        <div class="mb-3">
-                            <label for="password" class="form-label">CONTRASEÑA:</label>
-                            <input type="password" class="form-control" id="password" name="password" required>
-                        </div>
-                        <div class="mb-3">
-                            <label for="contirm_password" class="form-label">VALIDAR CONTRASEÑA:</label>
-                            <input type="confirm_password" class="form-control" id="Confirm_password" name="Confirm_password" required>
-                        </div>
-                        <div class="mb-3">
-                            <label for="role" class="form-label">MAESTRO O ALUMNO:</label>
-                            <select class="form-select" id="role" name="role">
-                                <option value="maestro">Maestro</option>
-                                <option value="alumno">Alumno</option>
-                                <option value="personal">Personal</option>
-                            </select>
-                        </div>
-                        <div class="mb-3">
-                            <label for="model_car" class="form-label">MODELO DE COCHE:</label>
-                            <input type="model_car" class="form-control" id="model_car" name="model_car" required>
-                        </div>
-                        <div class="mb-3">
-                            <label for="placas" class="form-label">PLACAS:</label>
-                            <input type="placas" class="form-control" id="placas" name="placas" required>
-                        </div>
-                        <button type="submit" class="btn-primary w-100 btn">REGISTRARME</button>
-                    </form>
-                </div>
-            </div>
+<link rel="stylesheet" type="text/css" href="{{asset('estilos/registro.css')}}">
+<div class="reporte-container">
+    <h2>Registro</h2>
+    <form class="reporte-form">
+        <!-- Descripción del Incidente -->
+        <div class="form-group">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
         </div>
-    </div>
+
+        <div class="form-group">
+            <label for="correo">Correo electrónico:</label>
+            <input type="text" id="correo" name="correo" required>
+        </div>
+
+        <!-- Número de Cajón -->
+        <div class="form-group">
+            <label for="contrasena">Contraseña:</label>
+            <input type="text" id="contrasena" name="contrasena" required>
+        </div>
+
+        <div class="form-group">
+            <label for="vali_contrasena">Validar contrasena:</label>
+            <input type="text" id="vali_contrasena" name="vali_contrasena" required>
+        </div>
+
+        <div class="form-group">
+            <label for="role" class="form-label">Rol dentro de la universidad:</label>
+            <select class="form-select" id="role" name="role">
+                <option value="maestro">Maestro</option>
+                <option value="alumno">Alumno</option>
+                <option value="personal">Personal</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="modelo">Modelo de vehiculo:</label>
+            <input type="text" id="modelo" name="modelo" required>
+        </div>
+
+        <div class="form-group">
+            <label for="placas">Placas:</label>
+            <input type="text" id="placas" name="placas" required>
+        </div>
+
+        <button type="submit">Acceder</button>
+    </form>
+</div>
 @endsection

@@ -3,26 +3,25 @@
 @section('title', 'Acceso')
 
 @section('content')
-<link rel="stylesheet" type="text/css" href="{{asset('estilos/plantilla.css')}}">
-    <div class="centrado">
-        <div class="recuadro">
-            <div class="row justify-content-center">
-                <div class="col-md-8">
-                    <h2>ACCESO</h2>
-                    <form>
-                        <div class="mb-3">
-                            <label for="email" class="form-label">CORREO ELECTRÓNICO:</label>
-                            <input type="email" class="form-control" id="email" name="email" required>
-                        </div>
-                        <div class="mb-3">
-                            <label for="password" class="form-label">CONTRASEÑA:</label>
-                            <input type="password" class="form-control" id="password" name="password" required>
-                        </div>
-                        <button type="submit" class="btn btn-primary w-100">ACCEDER</button>
-                    </form>
-                    <p class="text-center mt-3">¿No tienes una cuenta? <a href="{{ route('registro') }}">Regístrate</a></p>
-                </div>
-            </div>
+<link rel="stylesheet" type="text/css" href="{{asset('estilos/acceso.css')}}">
+<div class="reporte-container">
+    <h2>Acceso</h2>
+    <form class="reporte-form">
+        <!-- Descripción del Incidente -->
+        <div class="form-group">
+            <label for="descripcion">Correo electrónico</label>
+            <input type="text" id="correo" name="correo" required>
         </div>
-    </div>
+
+        <!-- Número de Cajón -->
+        <div class="form-group">
+            <label for="cajon">Contraseña:</label>
+            <input type="text" id="contrasena" name="contrasena" required>
+        </div>
+
+        <p class="text-center mt-3">¿No tienes una cuenta? <a class="link-success link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="{{ route('registro') }}">Regístrate</a></p>
+        <!-- Botón de Enviar -->
+        <button type="submit">Acceder</button>
+    </form>
+</div>
 @endsection
